@@ -1,0 +1,109 @@
+a, #menu li .sub-nav-wrapper .sub-nav li {
+ transition: all 0.5s;
+ -moz-transition: all 0.5s;
+ -webkit-transition: all 0.5s;
+}
+#menu li .sub-nav-wrapper {
+ pointer-events: none;
+ opacity: 0;
+ filter: alpha(opacity=0);
+ top: 0;
+  
+ transition: all 0.4s cubic-bezier(1,-5,0,0) 0s;
+ -moz-transition: all 0.4s cubic-bezier(1,-5,0,0) 0s;
+ -webkit-transition: all 0.4s cubic-bezier(1,-5,0,0) 0s;
+}
+#menu li:hover .sub-nav-wrapper {
+ pointer-events: auto;
+ opacity: 1;
+ filter: alpha(opacity=100);
+ top: 30px;
+}
+#menu {
+ position: relative;
+ text-align:center;
+ margin:0 auto;
+ background-color:#fff;
+ border-bottom: 2px solid red;
+}
+#menu li {
+ position: relative;
+ list-style: none;
+ display: inline-block;
+ padding: 5px 20px;
+}
+#menu li a {
+ padding: 5px;
+ display: block;
+  
+ font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+ font-size: 14px;
+ font-weight: 700;
+ color: #3b3b3b;
+ text-align: left;
+ text-shadow: 1px 1px 0 rgba(255,255,255,0.25);
+}
+#menu li:hover .main {
+ color: #ee4e1d;
+}
+#menu li ul {
+ display: block;
+ position: absolute;
+ z-index: 30;
+ margin-left: -16px;
+}
+#menu li ul ul {
+ width: 150px;
+ margin-top: 6px;
+ background: #fff;
+ border-top: 1px solid #fff;
+ padding:0;
+ box-shadow: 0 1px 2px rgba(0,0,0,0.35);
+ -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.35);
+ -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.35);
+}
+#menu li:hover .sub-nav-wrapper {
+ display: block;
+}
+#menu li .sub-nav-wrapper .sub-nav li {
+ list-style: none;
+ display: block;
+ margin: 0;
+ padding: 0;
+ text-align: left;
+ border-bottom: 1px solid #F8B3B3;
+}
+#menu li .sub-nav-wrapper .sub-nav li:last-child {
+ border: none;
+}
+#menu li .sub-nav-wrapper .sub-nav li a {
+ display: block;
+ padding: 11px 20px;
+ font-size: 12px;
+ font-weight: 600; 
+}
+#menu li a:hover {
+color: white;
+}
+#menu li .sub-nav-wrapper .sub-nav li:hover {
+ background: #FA7B7B;
+ border-bottom: 1px solid red;
+ color: #3b3b3b;
+ text-decoration: none;
+}
+
+
+
+<ul>
+	<a href="index.php?pid=11"><li>Lorem</a></li>
+	<a href="index.php?pid=12"><li>Thailand</a></li>
+	<a href="#"><li>Websites</a>
+		<ul>
+			<a href="http://www.ash-down.net"><li>Personal Portfolio</a></li>
+			<a href="http://www.whitestonemc.com"><li>Whitestone </a></li>
+			<a href="http://cit.ash-down.net"><li>CIT</a></li>
+			<a href="http://www.loismisegadis.com"><li>Lois Misegadis</a></li>
+			<a href="http://horizon.hesston.edu"><li>Horizon</a></li>
+		</ul>
+	</li>
+</ul>

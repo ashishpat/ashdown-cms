@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Contact</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <script type="text/javascript" src="js/jquery.js"></script> 
+       <script type="text/javascript" src="js/jquery.form.js"></script> 
+
+        <script type="text/javascript">
+            $('document').ready(function()
+			{
+
+
+			
+	$('#form').ajaxForm( {
+        target: '#preview', 
+        success: function() { 
+        $('#formbox').slideUp('fast'); 
+        } 
+    }); 
+						
+            });
+        </script> 
+
+    </head> 
+    <body> 
+		
+	
+	<div id="preview"> </div>
+        
+            <form name="" id="form" action="submit.php" method="post">
+                        <label>Name</label>
+                        <input type="text" name="name" class="" maxlength="40" />
+                        <label>Email</label>
+                        <input type="text" name="email" class="" maxlength="100" />
+                        <label>Message</label>
+                        <textarea name="message" rows="5" cols="45" class=""></textarea>
+                        <input type="submit" value="Submit">
+               
+            </form>           
+    </body> 
+</html> 

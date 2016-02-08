@@ -1,0 +1,166 @@
+                                                                                                                   /*Resetting CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { background: transparent; border: 0; margin: 0; padding: 0;}
+body { line-height: 1; }
+h1, h2, h3, h4, h5, h6 {font-weight: normal; }
+ol, ul { list-styl1e: none; }
+blockquote { quotes: none; }
+blockquote:before, blockquote:after { content: ''; content: none; }
+del { text-decoration: line-through; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+a img { border: none; }
+
+a {text-decoration:none;}
+
+/*BODY CONTENT STARTS HERE*/
+
+@font-face {
+    font-family: "Existence Light";
+	src: url(../media/existence.ttf) format("truetype");  
+} 	
+
+@font-face {
+    font-family: "Segoe ui";
+	src: url(../media/segoeui.ttf) format("truetype");  
+} 
+
+@font-face {
+    font-family: "Segoe ui B";
+	src: url(..//media/segoeuib.ttf) format("truetype");  
+} 
+
+@font-face {
+    font-family: "Segoe ui L";
+	src: url(..//media/segoeuil.ttf) format("truetype");  
+} 
+
+#menu
+{
+  display:none;
+}
+
+html
+{
+ 
+ position:relative;
+ font-size:28px;
+  
+}
+
+body
+{
+  background-color: #f5b401;
+  line-height:120%;
+  color: #737373;
+  width:100%;
+  
+  
+}
+
+
+
+.mainContent 
+{
+
+  font-family: "Segoe ui", Arial, Helvetica, sans-serif;
+  
+
+}
+
+.mainContent h1
+{
+  font-family: "Segoe ui L", Arial, Helvetica, sans-serif;
+  color: #1d1d1d;
+  font-size:200%;
+  
+}
+
+.mainContent p
+{
+ font-family: "Segoe ui L", Arial, Helvetica, sans-serif;
+ font-size:80%; 
+}
+
+.mainContent h2
+{
+  font-family: "Segoe ui L", Arial, Helvetica, sans-serif;
+  
+}
+
+
+strong
+{
+  font-family: "Segoe ui", Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+
+
+.margin-center	
+{
+ 	
+  	
+  	margin-top:12%;
+  	font-size:90%;
+  	margin-left:10%;
+  	
+	
+}
+
+.margin-center a
+{
+  border: none;
+  background: #c0504d;
+  color:#fff;
+  padding:10px;
+  margin-top:5px;
+  font-size:20px;
+}
+
+.margin-center h1
+{
+  font-size:160%;
+  color:#747474;
+}
+
+.margin-center h2
+{
+  font-size:140%;
+  color:#747474;
+}
+
+.logo_image
+{
+  position:absolute;
+  bottom:2%;
+  right: 1%;
+  
+}     
+
+.footer p
+{
+  font-size:70%; 
+  padding-left:2%;
+  
+  
+}
+
+.image
+{
+  float:left; 
+  white-space:nowrap;
+border: 2px solid #000;   
+-moz-box-shadow: 5px 5px 5px #343434;
+-webkit-box-shadow: 5px 5px 5px #343434;
+box-shadow: 5px 5px 5px #343434; 
+}
